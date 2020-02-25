@@ -1,0 +1,45 @@
+I, [2020-02-25T15:52:59.986809 #97709]  INFO -- : Initializing Karafka server 97709
+I, [2020-02-25T15:53:00.012768 #97709]  INFO -- : Running Karafka server 97709
+I, [2020-02-25T15:53:00.014665 #97709]  INFO -- : New topics added to target list: posts-topic
+I, [2020-02-25T15:53:00.014785 #97709]  INFO -- : Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-25T15:53:00.390933 #97709]  INFO -- : Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-25T15:53:00.391260 #97709]  INFO -- : [[consumer_app_posts_group] {}:] Will fetch at most 1048576 bytes at a time per partition from posts-topic
+I, [2020-02-25T15:53:00.391432 #97709]  INFO -- : [[consumer_app_posts_group] {}:] Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-25T15:53:00.391568 #97709]  INFO -- : [[consumer_app_posts_group] {}:] Joining group `consumer_app_posts_group`
+I, [2020-02-25T15:53:00.410050 #97709]  INFO -- : [[consumer_app_posts_group] {}:] Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-25T15:53:00.410215 #97709]  INFO -- : [[consumer_app_posts_group] {}:] There are no partitions to fetch from, sleeping for 1s
+I, [2020-02-25T15:53:00.447973 #97709]  INFO -- : [[consumer_app_posts_group] {}:] Joined group `consumer_app_posts_group` with member id `consumer_app-b83420c7-cd7a-4407-8a6e-96ea8c6a66a4`
+I, [2020-02-25T15:53:00.448078 #97709]  INFO -- : [[consumer_app_posts_group] {}:] Chosen as leader of group `consumer_app_posts_group`
+I, [2020-02-25T15:53:01.413830 #97709]  INFO -- : [[consumer_app_posts_group] {}:] There are no partitions to fetch from, sleeping for 1s
+I, [2020-02-25T15:53:01.448522 #97709]  INFO -- : [[consumer_app_posts_group] {}:] Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-25T15:53:01.488920 #97709]  INFO -- : [[consumer_app_posts_group] {}:] Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-25T15:53:01.529520 #97709]  INFO -- : [[consumer_app_posts_group] {}:] Partitions assigned for `posts-topic`: 0
+I, [2020-02-25T15:53:02.414070 #97709]  INFO -- : [[consumer_app_posts_group] {posts-topic: 0}:] Seeking posts-topic/0 to offset 0
+I, [2020-02-25T15:53:02.414210 #97709]  INFO -- : [[consumer_app_posts_group] {posts-topic: 0}:] New topics added to target list: posts-topic
+I, [2020-02-25T15:53:02.414253 #97709]  INFO -- : [[consumer_app_posts_group] {posts-topic: 0}:] Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-25T15:53:02.442421 #97709]  INFO -- : [[consumer_app_posts_group] {posts-topic: 0}:] Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-25T15:53:52.530031 #97709]  INFO -- : Received SIGINT system signal
+F, [2020-02-25T15:53:52.530259 #97709] FATAL -- : Fetcher crash due to an error: can't be called from trap context
+I, [2020-02-25T15:53:52.530770 #97709]  INFO -- : [[consumer_app_posts_group] {}:] Leaving group `consumer_app_posts_group`
+I, [2020-02-25T15:53:56.919441 #98425]  INFO -- : Initializing Karafka server 98425
+I, [2020-02-25T15:53:56.932341 #98425]  INFO -- : Running Karafka server 98425
+I, [2020-02-25T15:53:56.933258 #98425]  INFO -- : New topics added to target list: posts-topic
+I, [2020-02-25T15:53:56.933316 #98425]  INFO -- : Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-25T15:53:56.949558 #98425]  INFO -- : Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-25T15:53:56.949848 #98425]  INFO -- : [[consumer_app_posts_group] {}:] Will fetch at most 1048576 bytes at a time per partition from posts-topic
+I, [2020-02-25T15:53:56.950032 #98425]  INFO -- : [[consumer_app_posts_group] {}:] Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-25T15:53:56.949910 #98425]  INFO -- : [[consumer_app_posts_group] {}:] Joining group `consumer_app_posts_group`
+I, [2020-02-25T15:53:56.957960 #98425]  INFO -- : [[consumer_app_posts_group] {}:] Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-25T15:53:56.958073 #98425]  INFO -- : [[consumer_app_posts_group] {}:] There are no partitions to fetch from, sleeping for 1s
+I, [2020-02-25T15:53:56.971247 #98425]  INFO -- : [[consumer_app_posts_group] {}:] Joined group `consumer_app_posts_group` with member id `consumer_app-60f13c0a-faf7-4b9f-9b7d-976bc7015704`
+I, [2020-02-25T15:53:56.971404 #98425]  INFO -- : [[consumer_app_posts_group] {}:] Chosen as leader of group `consumer_app_posts_group`
+I, [2020-02-25T15:53:56.978667 #98425]  INFO -- : [[consumer_app_posts_group] {}:] Partitions assigned for `posts-topic`: 0
+I, [2020-02-25T15:53:57.960909 #98425]  INFO -- : [[consumer_app_posts_group] {posts-topic: 0}:] Seeking posts-topic/0 to offset 0
+I, [2020-02-25T15:53:57.961040 #98425]  INFO -- : [[consumer_app_posts_group] {posts-topic: 0}:] New topics added to target list: posts-topic
+I, [2020-02-25T15:53:57.961077 #98425]  INFO -- : [[consumer_app_posts_group] {posts-topic: 0}:] Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-25T15:53:58.009538 #98425]  INFO -- : [[consumer_app_posts_group] {posts-topic: 0}:] Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-25T15:54:51.167507 #98425]  INFO -- : Inline processing of topic posts-topic with 1 messages took 0 ms
+I, [2020-02-25T15:54:51.167594 #98425]  INFO -- : 1 messages on posts-topic topic delegated to PostTopicConsumer
+I, [2020-02-25T15:54:58.378410 #98425]  INFO -- : Received SIGINT system signal
+F, [2020-02-25T15:54:58.378755 #98425] FATAL -- : Fetcher crash due to an error: can't be called from trap context
+I, [2020-02-25T15:54:58.439744 #98425]  INFO -- : [[consumer_app_posts_group] {}:] Leaving group `consumer_app_posts_group`

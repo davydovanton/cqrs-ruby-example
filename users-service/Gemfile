@@ -13,3 +13,8 @@ gem 'pg'
 
 gem 'dotenv'
 gem 'rake'
+
+gem 'dry-struct'
+gem 'dry-monads'
+
+gem 'waterdrop'
