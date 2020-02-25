@@ -2,6 +2,8 @@
 
 ## Motivation
 
+CQRS as a pattern is not super popular in the ruby world. This repository can show you how you can implement commands and queries in your services system and use CQRS for sharing data between separate services and DBs.
+
 ## Architecture
 
 Image will be here soon
