@@ -2,8 +2,10 @@
 
 source 'https://rubygems.org'
 
+ruby '~> 2.7.0'
+
 gem 'dry-system', github: 'dry-rb/dry-system'
-gem 'sinatra'
+gem "hanami-api", github: 'hanami/api'
 gem 'thin'
 
 gem 'rom'

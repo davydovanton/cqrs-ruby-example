@@ -1,6 +1,6 @@
-require 'sinatra/base'
+require "hanami/api"
 
-class WebApp < Sinatra::Base
+class WebApp < Hanami::API
   get "/" do
     App.keys.join(' ')
   end

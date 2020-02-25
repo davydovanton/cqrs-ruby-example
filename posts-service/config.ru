@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-require_relative './web_app'
 require_relative './config/boot'
+require_relative './web_app'
 
-run Rack::URLMap.new(
-  '/' => WebApp.new
-)
+run WebApp.new
