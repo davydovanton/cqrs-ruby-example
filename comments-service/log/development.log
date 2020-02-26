@@ -1,0 +1,51 @@
+I, [2020-02-26T21:33:54.169141 #74845]  INFO -- : Initializing Karafka server 74845
+I, [2020-02-26T21:33:54.199635 #74845]  INFO -- : Running Karafka server 74845
+I, [2020-02-26T21:33:54.200716 #74845]  INFO -- : New topics added to target list: comment-topic
+I, [2020-02-26T21:33:54.200788 #74845]  INFO -- : Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-26T21:33:54.605079 #74845]  INFO -- : Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-26T21:33:54.605342 #74845]  INFO -- : [[consumer_app_posts_group] {}:] Joining group `consumer_app_posts_group`
+I, [2020-02-26T21:33:54.605421 #74845]  INFO -- : [[consumer_app_posts_group] {}:] Will fetch at most 1048576 bytes at a time per partition from comment-topic
+I, [2020-02-26T21:33:54.605754 #74845]  INFO -- : [[consumer_app_posts_group] {}:] Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-26T21:33:54.627312 #74845]  INFO -- : [[consumer_app_posts_group] {}:] Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-26T21:33:54.627915 #74845]  INFO -- : [[consumer_app_posts_group] {}:] There are no partitions to fetch from, sleeping for 1s
+I, [2020-02-26T21:33:54.659256 #74845]  INFO -- : [[consumer_app_posts_group] {}:] Joined group `consumer_app_posts_group` with member id `consumer_app-69db6fda-e6ae-425e-b3b9-a935c237ecc5`
+I, [2020-02-26T21:33:54.659343 #74845]  INFO -- : [[consumer_app_posts_group] {}:] Chosen as leader of group `consumer_app_posts_group`
+I, [2020-02-26T21:33:55.629229 #74845]  INFO -- : [[consumer_app_posts_group] {}:] There are no partitions to fetch from, sleeping for 1s
+I, [2020-02-26T21:33:55.664250 #74845]  INFO -- : [[consumer_app_posts_group] {}:] Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-26T21:33:55.692601 #74845]  INFO -- : [[consumer_app_posts_group] {}:] Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-26T21:33:55.708081 #74845]  INFO -- : [[consumer_app_posts_group] {}:] Partitions assigned for `comment-topic`: 0
+I, [2020-02-26T21:33:56.632063 #74845]  INFO -- : [[consumer_app_posts_group] {comment-topic: 0}:] Seeking comment-topic/0 to offset 0
+I, [2020-02-26T21:33:56.632370 #74845]  INFO -- : [[consumer_app_posts_group] {comment-topic: 0}:] New topics added to target list: comment-topic
+I, [2020-02-26T21:33:56.632466 #74845]  INFO -- : [[consumer_app_posts_group] {comment-topic: 0}:] Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-26T21:33:56.651531 #74845]  INFO -- : [[consumer_app_posts_group] {comment-topic: 0}:] Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-26T21:35:31.943707 #74845]  INFO -- : Inline processing of topic comment-topic with 1 messages took 0 ms
+I, [2020-02-26T21:35:31.943792 #74845]  INFO -- : 1 messages on comment-topic topic delegated to CommentTopicConsumer
+I, [2020-02-26T21:35:55.036961 #74845]  INFO -- : Received SIGINT system signal
+I, [2020-02-26T21:35:55.037080 #74845]  INFO -- : Stopping Karafka server 74845
+F, [2020-02-26T21:35:55.037209 #74845] FATAL -- : Fetcher crash due to an error: can't be called from trap context
+I, [2020-02-26T21:35:55.037574 #74845]  INFO -- : Stopping Karafka server 74845
+I, [2020-02-26T21:35:55.090563 #74845]  INFO -- : [[consumer_app_posts_group] {}:] Leaving group `consumer_app_posts_group`
+I, [2020-02-26T21:46:44.650580 #80544]  INFO -- : Initializing Karafka server 80544
+I, [2020-02-26T21:46:44.686007 #80544]  INFO -- : Running Karafka server 80544
+I, [2020-02-26T21:46:44.687457 #80544]  INFO -- : New topics added to target list: comment-topic
+I, [2020-02-26T21:46:44.687547 #80544]  INFO -- : Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-26T21:46:44.713442 #80544]  INFO -- : Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-26T21:46:44.713670 #80544]  INFO -- : [[consumer_app_posts_group] {}:] Joining group `consumer_app_posts_group`
+I, [2020-02-26T21:46:44.713792 #80544]  INFO -- : [[consumer_app_posts_group] {}:] Will fetch at most 1048576 bytes at a time per partition from comment-topic
+I, [2020-02-26T21:46:44.714049 #80544]  INFO -- : [[consumer_app_posts_group] {}:] Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-26T21:46:44.725760 #80544]  INFO -- : [[consumer_app_posts_group] {}:] Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-26T21:46:44.725932 #80544]  INFO -- : [[consumer_app_posts_group] {}:] There are no partitions to fetch from, sleeping for 1s
+I, [2020-02-26T21:46:44.752730 #80544]  INFO -- : [[consumer_app_posts_group] {}:] Joined group `consumer_app_posts_group` with member id `consumer_app-32b7f4a7-5a99-430e-a593-7b7ba2c0e85f`
+I, [2020-02-26T21:46:44.752850 #80544]  INFO -- : [[consumer_app_posts_group] {}:] Chosen as leader of group `consumer_app_posts_group`
+I, [2020-02-26T21:46:44.768953 #80544]  INFO -- : [[consumer_app_posts_group] {}:] Partitions assigned for `comment-topic`: 0
+I, [2020-02-26T21:46:45.729364 #80544]  INFO -- : [[consumer_app_posts_group] {comment-topic: 0}:] Seeking comment-topic/0 to offset 1
+I, [2020-02-26T21:46:45.729555 #80544]  INFO -- : [[consumer_app_posts_group] {comment-topic: 0}:] New topics added to target list: comment-topic
+I, [2020-02-26T21:46:45.729603 #80544]  INFO -- : [[consumer_app_posts_group] {comment-topic: 0}:] Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-26T21:46:45.755814 #80544]  INFO -- : [[consumer_app_posts_group] {comment-topic: 0}:] Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-26T21:47:14.970810 #80544]  INFO -- : Inline processing of topic comment-topic with 1 messages took 70 ms
+I, [2020-02-26T21:47:14.971081 #80544]  INFO -- : 1 messages on comment-topic topic delegated to CommentTopicConsumer
+I, [2020-02-26T21:48:20.755097 #80544]  INFO -- : Received SIGINT system signal
+I, [2020-02-26T21:48:20.756069 #80544]  INFO -- : Stopping Karafka server 80544
+F, [2020-02-26T21:48:20.756882 #80544] FATAL -- : Fetcher crash due to an error: can't be called from trap context
+I, [2020-02-26T21:48:20.757676 #80544]  INFO -- : Stopping Karafka server 80544
+I, [2020-02-26T21:48:20.816898 #80544]  INFO -- : [[consumer_app_posts_group] {}:] Leaving group `consumer_app_posts_group`

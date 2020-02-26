@@ -15,6 +15,8 @@ module CommandsHandler
 
         event = Events::UserCreated.new(new_user.to_h)
         producer.call(event: event, topic: 'user-topic')
+
+        new_user
       end
     end
   end

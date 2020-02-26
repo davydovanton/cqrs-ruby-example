@@ -1,8 +1,7 @@
 module Commands
-  class CreateComment
-    include Import[post_repo: 'write_model.repositories.comments']
-
-    def call
-    end
+  class CreateComment < Dry::Struct
+    attribute :post_id, Types::Integer
+    attribute :body, Types::String
+    attribute :author_id, Types::Integer
   end
 end

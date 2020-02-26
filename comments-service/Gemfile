@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 ruby '~> 2.7.0'
 
 gem 'dry-system', github: 'dry-rb/dry-system'
-gem "hanami-api", github: 'hanami/api'
+gem "sinatra"
 gem 'thin'
 
 gem 'rom'
@@ -18,6 +18,8 @@ gem 'rake'
 
 gem 'dry-struct'
 gem 'dry-monads'
+
+gem 'faraday'
 
 gem 'waterdrop'
 gem 'karafka'
