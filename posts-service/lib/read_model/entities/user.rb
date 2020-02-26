@@ -1,6 +1,6 @@
 module ReadModel
   module Entities
-    class Post < ROM::Struct
+    class User < ROM::Struct
     end
   end
 end

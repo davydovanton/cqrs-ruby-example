@@ -24,6 +24,11 @@ App.boot(:read_rom) do |app|
         end
         auto_struct true
       end
+
+      configuration.relation(:users) do
+        schema(infer: true)
+        auto_struct true
+      end
     end
 
     register(:read_rom, container)
