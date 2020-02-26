@@ -21,17 +21,44 @@ APP_LOADER.eager_load
 
 class PostTopicConsumer < Karafka::BaseConsumer
   def consume
-    puts '*' * 80
-
     params_batch.each do |message|
-      puts message
+      puts
+      puts "=== Post Event ==="
+      puts message.payload
+
+      App['event_handlers.post_created'].call(message.payload)
+    end
+  end
+end
+
+class UserTopicConsumer < Karafka::BaseConsumer
+  def consume
+    params_batch.each do |message|
+      puts
+      puts "=== User Event ==="
+      puts message.payload
+
+      App['event_handlers.user_created'].call(message.payload)
+    end
+  end
+end
+
+class CommentTopicConsumer < Karafka::BaseConsumer
+  def consume
+    params_batch.each do |message|
+      puts
+      puts "=== Comment Event ==="
+      puts message.payload
+      p message.payload
+
+      App['event_handlers.comment_created'].call(message.payload)
     end
   end
 end
 
 class JsonDeserializer
   def call(message)
-    JSON.parse(message.payload)
+    JSON.parse(message.payload, symbolize_names: true)
   end
 end
 
@@ -63,9 +90,25 @@ class KarafkaApp < Karafka::App
   # )
 
   consumer_groups.draw do
-    consumer_group :posts_group do
-      topic :'posts-topic' do
+    consumer_group :post_service_posts_group do
+      topic :'post-topic' do
         consumer PostTopicConsumer
+
+        deserializer JsonDeserializer.new
+      end
+    end
+
+    consumer_group :post_service_users_group do
+      topic :'user-topic' do
+        consumer UserTopicConsumer
+
+        deserializer JsonDeserializer.new
+      end
+    end
+
+    consumer_group :post_service_comments_group do
+      topic :'comment-topic' do
+        consumer CommentTopicConsumer
 
         deserializer JsonDeserializer.new
       end

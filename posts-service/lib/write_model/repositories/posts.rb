@@ -12,6 +12,10 @@ module WriteModel
             timestamps: %i(created_at updated_at)
           }
         }
+
+      def find_by_title(title)
+        root.where(title: title).exist?
+      end
     end
   end
 end

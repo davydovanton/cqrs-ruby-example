@@ -3,7 +3,6 @@
 App.boot(:kafka_producer) do |app|
   init do
     require 'waterdrop'
-    require 'json'
 
     WaterDrop.setup do |config|
       config.deliver = true
@@ -12,7 +11,7 @@ App.boot(:kafka_producer) do |app|
 
     class KafkaProducer
       def call(event:, topic:)
-        WaterDrop::SyncProducer.call(event.to_json, topic: topic)
+        WaterDrop::SyncProducer.call(event.serialize.to_json, topic: topic)
       end
     end
 

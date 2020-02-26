@@ -1,8 +1,9 @@
 module Queries
   class Show
-    include Import[post_repo: 'read_model.repositories.posts']
+    include Import[repo: 'read_model.repositories.posts']
 
-    def call
+    def call(id:)
+      repo.find_with_comments(id)
     end
   end
 end

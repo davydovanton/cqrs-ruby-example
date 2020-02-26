@@ -2,9 +2,16 @@
 
 module EventHandlers
   class PostCreated
-    include Import[post_repo: 'write_model.repositories.posts']
+    include Import[rom: :read_rom]
 
-    def call
+    def call(event)
+      data = event[:data]
+
+      user = rom.relations[:users].by_pk(data[:author_id]).one
+      data[:author_name] = user&.full_name || 'Anonymous'
+
+      rom.relations[:posts].command(:create).call(data)
     end
   end
 end
+

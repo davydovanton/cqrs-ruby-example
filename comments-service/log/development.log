@@ -49,3 +49,24 @@ I, [2020-02-26T21:48:20.756069 #80544]  INFO -- : Stopping Karafka server 80544
 F, [2020-02-26T21:48:20.756882 #80544] FATAL -- : Fetcher crash due to an error: can't be called from trap context
 I, [2020-02-26T21:48:20.757676 #80544]  INFO -- : Stopping Karafka server 80544
 I, [2020-02-26T21:48:20.816898 #80544]  INFO -- : [[consumer_app_posts_group] {}:] Leaving group `consumer_app_posts_group`
+I, [2020-02-26T22:27:25.341763 #95204]  INFO -- : Initializing Karafka server 95204
+I, [2020-02-26T22:27:25.370722 #95204]  INFO -- : Running Karafka server 95204
+I, [2020-02-26T22:27:25.371610 #95204]  INFO -- : New topics added to target list: post-topic
+I, [2020-02-26T22:27:25.371655 #95204]  INFO -- : Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-26T22:27:25.374969 #95204]  INFO -- : Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-26T22:27:25.375364 #95204]  INFO -- : [[consumer_app_posts_group] {}:] Joining group `consumer_app_posts_group`
+I, [2020-02-26T22:27:25.375452 #95204]  INFO -- : [[consumer_app_posts_group] {}:] Will fetch at most 1048576 bytes at a time per partition from post-topic
+I, [2020-02-26T22:27:25.375737 #95204]  INFO -- : [[consumer_app_posts_group] {}:] Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-26T22:27:25.380062 #95204]  INFO -- : [[consumer_app_posts_group] {}:] Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-26T22:27:25.380165 #95204]  INFO -- : [[consumer_app_posts_group] {}:] There are no partitions to fetch from, sleeping for 1s
+I, [2020-02-26T22:27:26.024986 #95204]  INFO -- : [[consumer_app_posts_group] {}:] Joined group `consumer_app_posts_group` with member id `consumer_app-64c5c0af-d25b-42e6-817f-9eeda586d993`
+I, [2020-02-26T22:27:26.032675 #95204]  INFO -- : [[consumer_app_posts_group] {}:] Partitions assigned for `post-topic`: 0
+I, [2020-02-26T22:27:26.384262 #95204]  INFO -- : [[consumer_app_posts_group] {post-topic: 0}:] Seeking post-topic/0 to offset 1
+I, [2020-02-26T22:27:26.384388 #95204]  INFO -- : [[consumer_app_posts_group] {post-topic: 0}:] New topics added to target list: post-topic
+I, [2020-02-26T22:27:26.384429 #95204]  INFO -- : [[consumer_app_posts_group] {post-topic: 0}:] Fetching cluster metadata from kafka://192.168.1.65:9092
+I, [2020-02-26T22:27:26.389655 #95204]  INFO -- : [[consumer_app_posts_group] {post-topic: 0}:] Discovered cluster metadata; nodes: localhost:9092 (node_id=1)
+I, [2020-02-26T22:27:32.852647 #95204]  INFO -- : Received SIGINT system signal
+I, [2020-02-26T22:27:32.852866 #95204]  INFO -- : Stopping Karafka server 95204
+F, [2020-02-26T22:27:32.853021 #95204] FATAL -- : Fetcher crash due to an error: can't be called from trap context
+I, [2020-02-26T22:27:32.853242 #95204]  INFO -- : Stopping Karafka server 95204
+I, [2020-02-26T22:27:32.854653 #95204]  INFO -- : [[consumer_app_posts_group] {}:] Leaving group `consumer_app_posts_group`

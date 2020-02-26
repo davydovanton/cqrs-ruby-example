@@ -1,19 +1,23 @@
-require "hanami/api"
+require "sinatra"
+require "json"
 
-class WebApp < Hanami::API
+class WebApp < Sinatra::Base
   get "/" do
     App.keys.join(' ')
   end
 
   get "/posts" do
-    'List of posts'
+    App['queries.list'].call.map(&:to_h).to_json
   end
 
   get "/posts/:id" do
-    'information about specific post'
+    App['queries.show'].call(id: params[:id]).to_h.to_json
   end
 
   post "/posts" do
-    'A new post was created'
+    json = JSON.parse(request.body.read, symbolize_names: true)
+    command = Commands::CreatePost.new(json[:post])
+    result = App['commands_handler.base'].call(command)
+    result.to_h.to_json
   end
 end

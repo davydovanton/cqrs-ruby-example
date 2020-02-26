@@ -1,8 +1,7 @@
 module Commands
-  class CreatePost
-    include Import[post_repo: 'write_model.repositories.posts']
-
-    def call
-    end
+  class CreatePost < Dry::Struct
+    attribute :title, Types::String
+    attribute :body, Types::String
+    attribute :author_id, Types::Integer
   end
 end

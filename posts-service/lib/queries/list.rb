@@ -1,8 +1,9 @@
 module Queries
   class List
-    include Import[post_repo: 'read_model.repositories.posts']
+    include Import[repo: 'read_model.repositories.posts']
 
     def call
+      repo.all
     end
   end
 end

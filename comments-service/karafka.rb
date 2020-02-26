@@ -19,7 +19,7 @@ APP_LOADER.enable_reloading
 APP_LOADER.setup
 APP_LOADER.eager_load
 
-class CommentTopicConsumer < Karafka::BaseConsumer
+class PostTopicConsumer < Karafka::BaseConsumer
   def consume
     params_batch.each do |message|
       puts
@@ -64,9 +64,9 @@ class KarafkaApp < Karafka::App
   # )
 
   consumer_groups.draw do
-    consumer_group :posts_group do
-      topic :'comment-topic' do
-        consumer CommentTopicConsumer
+    consumer_group :comment_service_comment_group do
+      topic :'post-topic' do
+        consumer PostTopicConsumer
 
         deserializer JsonDeserializer.new
       end

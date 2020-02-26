@@ -13,6 +13,7 @@ App.boot(:kafka_producer) do |app|
 
     class KafkaProducer
       def call(event:, topic:)
+        puts " CALLED HERE "
         WaterDrop::SyncProducer.call(event.serialize.to_json, topic: topic)
       end
     end
