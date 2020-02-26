@@ -12,6 +12,10 @@ module WriteModel
             timestamps: %i(created_at updated_at)
           }
         }
+
+      def find_by_full_name(full_name)
+        root.where(full_name: full_name).one
+      end
     end
   end
 end

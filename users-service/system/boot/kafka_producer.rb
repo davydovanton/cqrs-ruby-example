@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'json'
+
 App.boot(:kafka_producer) do |app|
   init do
     require 'waterdrop'
@@ -11,7 +13,7 @@ App.boot(:kafka_producer) do |app|
 
     class KafkaProducer
       def call(event:, topic:)
-        WaterDrop::SyncProducer.call(event.to_h, topic: topic)
+        WaterDrop::SyncProducer.call(event.serialize.to_json, topic: topic)
       end
     end
 
