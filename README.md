@@ -6,7 +6,7 @@ CQRS as a pattern is not super popular in the ruby world. This repository can sh
 
 ## Architecture
 
-Image will be here soon
+![Architecture diagram](https://github.com/davydovanton/cqrs-ruby-example/blob/master/docs/images/architecture.png?raw=true)
 
 ## List of services
 
